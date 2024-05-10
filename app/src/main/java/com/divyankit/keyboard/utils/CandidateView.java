@@ -184,6 +184,9 @@ public class CandidateView extends View {
                 } else if (i != 0) {
                     paint.setColor(mColorOther);
                 }
+                //translate suggestion
+//                suggestion = Translate.getTranslation(suggestion);
+
                 canvas.drawText(suggestion, x + X_GAP, y, paint);
                 paint.setColor(mColorOther);
                 canvas.drawLine(x + wordWidth + 0.5f, bgPadding.top,
@@ -218,7 +221,7 @@ public class CandidateView extends View {
     }
 
     public void setSuggestions(List<String> suggestions, boolean completions, boolean typedWordValid) {
-        clear();
+//        clear();
         if (suggestions != null) {
             mSuggestions = new ArrayList<String>(suggestions);
         }

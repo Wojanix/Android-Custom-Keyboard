@@ -575,8 +575,11 @@ public class SoftKeyboard extends InputMethodService
                 list.add(mComposing.toString());
                 setSuggestions(list, true, true);
             } else {
-                setSuggestions(null, false, false);
+//                setSuggestions(null, false, false);
+                System.out.println("Do nothing :)");
             }
+
+
         }
     }
 
